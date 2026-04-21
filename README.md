@@ -89,7 +89,7 @@ Testing the `format` prompt in the MCP Inspector — selecting a `doc_id` and ca
 <img width="1787" height="959" alt="Defining Prompts (MCP)" src="https://github.com/user-attachments/assets/a5d8cdef-bcf4-4850-b689-cc6d814bd097" />
 
 
-### Prompts in Clients
+### Prompts for Clients
 
 Using the `/format` slash command in the client to trigger the prompt — Claude reads the document and returns it fully reformatted in Markdown with headings, lists, and a table:
 
@@ -114,7 +114,7 @@ Building the Python client that connects to the MCP server via STDIO, discovers 
 Asking Claude what's in the `report.pdf` — Claude uses the `read_doc_contents` tool and returns a natural language answer:
 
 ```
-> Whats in the @report.pdf document
+> What's in the @report.pdf document
 
 Response:
 The report.pdf document details the state of a 20m condenser tower.
@@ -142,7 +142,7 @@ To test Claude's reasoning ability through the MCP client, I submitted the class
 
 ### Initial Solution
 
-Claude correctly identifies there is no missing dollar and walks through the full accounting:
+Claude correctly identifies that there is no missing dollar and walks through the full accounting:
 
 
 <img width="1413" height="800" alt="reasoning_test_solution" src="https://github.com/user-attachments/assets/829a6edd-c18e-4048-8178-688fe22c3501" />
@@ -188,7 +188,7 @@ Pushing further by asking Claude to explain the grammatically correct way to phr
 
 ## 🚀 How to Run
 
-### 1. Set up virtual environment
+### 1. Set up a virtual environment
 ```bash
 python -m venv .venv
 .venv\Scripts\activate.bat       # Windows
@@ -243,7 +243,7 @@ Learn more: [https://www.anthropic.com](https://www.anthropic.com)
 
 ## 🏅 Key Takeaways
 
-- MCP standardizes how AI models connect to external context — think of it as a **"USB-C port for AI"**
+- MCP standardizes how AI models connect to external context — think of it as a **"USB-C port for  AI."**
 - **Tools** let Claude take actions; **Resources** give Claude data; **Prompts** provide reusable interaction templates
 - A well-designed MCP server makes Claude dramatically more capable in specialized workflows
 - The MCP Inspector is invaluable for iterative development and debugging
