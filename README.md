@@ -237,7 +237,7 @@ mcp/
 **Anthropic Learning Academy — Claude with Amazon Bedrock**  
 Module: Model Context Protocol (MCP)
 
-Learn more: https://anthropic.skilljar.com/claude-in-amazon-bedrock
+Learn more: https://anthropic.skilljar.com/
 
 ---
 
