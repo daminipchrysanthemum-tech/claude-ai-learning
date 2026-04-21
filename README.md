@@ -26,7 +26,9 @@ This project was completed as part of the **Claude 101 with Amazon Bedrock** cou
 
 The diagram below shows how MCP connects Claude to external tools and data sources:
 
-![MCP Overview](screenshots/MCP.png)
+
+<img width="1259" height="382" alt="MCP" src="https://github.com/user-attachments/assets/44984885-ffdd-423c-82cf-39c58ca96e6b" />
+
 
 ---
 
@@ -34,7 +36,7 @@ The diagram below shows how MCP connects Claude to external tools and data sourc
 
 ### Part 1 — Server Setup
 
-Setting up the MCP server foundation, registering the server and configuring transport:
+Setting up the MCP server foundation, registering the server, and configuring transport:
 
 ![MCP Server Part 1](screenshots/MCP_Server__Part_1_.png)
 
