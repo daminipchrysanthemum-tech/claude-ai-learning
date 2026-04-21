@@ -2,8 +2,6 @@
 
 This project was completed as part of the Claude 101 with Amazon Bedrock course on the Anthropic Learning Academy. The module covers the Model Context Protocol (MCP) — an open standard that allows AI models like Claude to securely connect to external tools, data sources, and services.
 
---
-
 🧠 What I Learned
 
 What MCP is and why it matters for building AI-powered applications
@@ -12,8 +10,6 @@ How to build a custom MCP Server that exposes document tools to an AI model
 How to build an MCP Client that connects to the server and interacts with Claude
 How to use the MCP Inspector (v0.21.2) to debug and test MCP servers interactively
 How MCP enables Claude to read, edit, and reason over real documents
-
---
 
 🏗️ Architecture
 
