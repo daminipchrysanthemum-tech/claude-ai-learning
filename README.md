@@ -5,7 +5,7 @@
 
 ## 📖 Overview
 
-This project was completed as part of the **Claude 101 with Amazon Bedrock** course on the Anthropic Learning Academy. The module covers the **Model Context Protocol (MCP)** — an open standard that allows AI models like Claude to securely connect to external tools, data sources, and services.
+This project was completed as part of the **Claude with Amazon Bedrock** course on the Anthropic Learning Academy. The module covers the **Model Context Protocol (MCP)** — an open standard that allows AI models like Claude to securely connect to external tools, data sources, and services.
 
 ---
 
@@ -234,10 +234,10 @@ mcp/
 
 ## 📚 Course
 
-**Anthropic Learning Academy — Claude 101 with Amazon Bedrock**  
+**Anthropic Learning Academy — Claude with Amazon Bedrock**  
 Module: Model Context Protocol (MCP)
 
-Learn more: [https://www.anthropic.com](https://www.anthropic.com)
+Learn more: https://anthropic.skilljar.com/claude-in-amazon-bedrock
 
 ---
 
