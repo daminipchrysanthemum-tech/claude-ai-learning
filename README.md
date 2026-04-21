@@ -38,13 +38,17 @@ The diagram below shows how MCP connects Claude to external tools and data sourc
 
 Setting up the MCP server foundation, registering the server, and configuring transport:
 
-![MCP Server Part 1](screenshots/MCP_Server__Part_1_.png)
+
+<img width="1889" height="874" alt="MCP Server (Part 1)" src="https://github.com/user-attachments/assets/347d6ba8-612b-4c01-8eab-ff0065f2eadf" />
+
 
 ### Part 2 — Tools Implementation
 
 Implementing the document tools (`list_documents`, `read_doc_contents`, `edit_document`):
 
-![MCP Server Part 2](screenshots/MCP_Server__Part_2_.png)
+
+<img width="1890" height="897" alt="MCP Server (Part 2)" src="https://github.com/user-attachments/assets/d3ebf509-c826-46d3-a48f-54cadb48fdd2" />
+
 
 ---
 
