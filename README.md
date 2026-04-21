@@ -58,13 +58,16 @@ Implementing the document tools (`list_documents`, `read_doc_contents`, `edit_do
 
 Exposing documents as MCP resources so Claude can discover and read them:
 
-![Defining Resources](screenshots/Defining_Resources.png)
+
+<img width="1785" height="933" alt="Defining Resources" src="https://github.com/user-attachments/assets/35f78b22-62af-49cb-932f-72c7577f2d82" />
+
 
 ### Accessing Resources in the MCP Inspector
 
 Testing the `docs://documents` resource and `fetch_doc` resource template via the MCP Inspector — the resource read returns the document content as `text/plain`:
 
-![Accessing Resources](screenshots/Accessing_Resources.png)
+
+<img width="1031" height="396" alt="Accessing Resources" src="https://github.com/user-attachments/assets/8f6dc42f-1eea-4e5b-a600-38dd4ee39f2c" />
 
 ---
 
