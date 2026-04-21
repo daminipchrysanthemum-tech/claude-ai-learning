@@ -77,19 +77,24 @@ Testing the `docs://documents` resource and `fetch_doc` resource template via th
 
 Implementing the `format` prompt that rewrites a document in Markdown syntax, accepting a `doc_id` parameter:
 
-![Defining Prompts](screenshots/Defining_Prompts.png)
+
+<img width="1041" height="552" alt="Defining Prompts" src="https://github.com/user-attachments/assets/b4a06c3b-e698-4c37-aefc-382e5f1694cb" />
+
 
 ### Defining Prompts (MCP Inspector)
 
 Testing the `format` prompt in the MCP Inspector — selecting a `doc_id` and calling `Get Prompt` returns a structured message object ready for Claude:
 
-![Defining Prompts MCP Inspector](screenshots/Defining_Prompts__MCP_.png)
+
+<img width="1787" height="959" alt="Defining Prompts (MCP)" src="https://github.com/user-attachments/assets/a5d8cdef-bcf4-4850-b689-cc6d814bd097" />
+
 
 ### Prompts in Clients
 
 Using the `/format` slash command in the client to trigger the prompt — Claude reads the document and returns it fully reformatted in Markdown with headings, lists, and a table:
 
-![Prompts In Clients](screenshots/Prompts_In_Clients.png)
+
+<img width="1056" height="920" alt="Prompts In Clients" src="https://github.com/user-attachments/assets/5343d63c-56c6-4121-9531-671c371065d0" />
 
 ---
 
@@ -97,7 +102,8 @@ Using the `/format` slash command in the client to trigger the prompt — Claude
 
 Building the Python client that connects to the MCP server via STDIO, discovers available tools, and passes them to Claude through the Anthropic API:
 
-![Implementing a Client](screenshots/Implementing_a_client.png)
+
+<img width="1415" height="707" alt="Implementing a client" src="https://github.com/user-attachments/assets/d6431a2b-5847-4efe-a1a2-ad0960153987" />
 
 ---
 
@@ -138,13 +144,17 @@ To test Claude's reasoning ability through the MCP client, I submitted the class
 
 Claude correctly identifies there is no missing dollar and walks through the full accounting:
 
-![Reasoning Test Solution](screenshots/reasoning_test_solution.png)
+
+<img width="1413" height="800" alt="reasoning_test_solution" src="https://github.com/user-attachments/assets/829a6edd-c18e-4048-8178-688fe22c3501" />
+
 
 ### Follow-up — Why the Equation is Misleading
 
 Pushing further by asking Claude to explain the grammatically correct way to phrase the equation so it's not misleading:
 
-![Reasoning Test Follow-up](screenshots/reasoning_test_followup.png)
+
+<img width="1408" height="537" alt="reasoning_test_followup" src="https://github.com/user-attachments/assets/d4d6ddb1-b0f1-4725-8a6d-8465cd447c8d" />
+
 
 > Claude explained that the word **"plus"** is the problem — the $2 the bellhop kept is already *included* in the $27 paid, so you should say **"which includes"** or **"minus"**, not "plus". The puzzle tricks you by switching perspectives mid-calculation.
 
