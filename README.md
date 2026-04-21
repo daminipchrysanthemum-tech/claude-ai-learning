@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MCP Chat
 
 MCP Chat is a command-line interface application that enables interactive chat capabilities with AI models through Amazon Bedrock. The application supports document retrieval, command-based prompts, and extensible tool integrations via the MCP (Model Control Protocol) architecture.
@@ -109,3 +110,5 @@ To fully implement the MCP features:
 
 1. Complete the TODOs in `mcp_server.py`
 2. Implement the missing functionality in `mcp_client.py`
+=======
+
