@@ -1,7 +1,5 @@
 # 🔌 Model Context Protocol (MCP) — Anthropic Learning Academy
 
-> **Module:** Model Context Protocol | **Course:** Claude 101 with Amazon Bedrock  
-> **Platform:** Anthropic Learning Academy
 
 ---
 
