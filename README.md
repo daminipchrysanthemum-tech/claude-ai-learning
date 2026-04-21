@@ -156,7 +156,6 @@ Pushing further by asking Claude to explain the grammatically correct way to phr
 <img width="1408" height="537" alt="reasoning_test_followup" src="https://github.com/user-attachments/assets/d4d6ddb1-b0f1-4725-8a6d-8465cd447c8d" />
 
 
-
 > Claude explained that the word **" plus"** is the problem — the $2 the bellhop kept is already *included* in the $27 paid, so you should say **" which includes"** or **"minus"**, not "plus". The puzzle tricks you by switching perspectives mid-calculation.
 
 ---
