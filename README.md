@@ -1,6 +1,6 @@
-# Document Tools
+🤖 Claude Code in Action
 
-A Python package implementing a variety of document-related tools for converting and processing document formats. These tools are exposed through an MCP server interface for seamless integration with AI assistants.
+Used Claude Code directly inside VS Code as an agentic coding assistant — not just for autocomplete, but for reading the codebase, planning tests, writing implementations, and running verifications end to end.
 
 ## Setup
 
