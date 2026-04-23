@@ -53,7 +53,7 @@ Claude Code implemented the document_path_to_markdown function in tools/document
 ---
 
 
-🔌 Enhancements with MCP Servers
+## 🔌 Enhancements with MCP Servers
 Used the newly implemented document_path_to_markdown tool through Claude Code to convert a real DOCX file (tests/fixtures/mcp_docs.docx) to markdown. The conversion extracted live MCP documentation content, including the full MCP primitives table — Prompts, Resources, and Tools — confirming the tool works correctly end-to-end.
 
 
@@ -63,7 +63,7 @@ Used the newly implemented document_path_to_markdown tool through Claude Code to
 ---
 
 
-⚡ Parallelizing Claude Code with Git Worktrees
+## ⚡ Parallelizing Claude Code with Git Worktrees
 Set up Git worktrees so Claude Code can work on multiple features simultaneously on separate branches without conflicts. Claude Code verified the worktree didn't exist, created .trees/feature_a on a new feature_a branch, symlinked the shared .venv, and launched a second VS Code window — all in one command sequence.
 
 
@@ -73,5 +73,13 @@ Set up Git worktrees so Claude Code can work on multiple features simultaneously
 
 ---
 
-🛠️ Claude Code Workflow Summary
-StepActionOutcome/initInitialized project context102-line CLAUDE.md auto-generatedFile auditRead document.py + math.pyStandards violation caught before codingTest planningDescribed new tool in plain English20 tests planned across 4 categoriesTest implementationApproved plan5 tests written, reusing existing fixturesFull implementationOne task promptFunction built, registered, all 8 tests passingMCP enhancementRan tool via Claude CodeReal DOCX converted to markdown successfullyParallelizationGit worktree setupTwo branches ready for simultaneous development
+## 🛠️ Claude Code Workflow Summary
+
+| Type | Name | Description |
+|------|------|-------------|
+| **Initialization** | `/init` | Auto-generated a 102-line CLAUDE.md capturing FastMCP server pattern, Pydantic Field annotation standards, tool registration flow, and module organization |
+| **Tool** | `read_doc_contents` | Reads a document and returns it as a string |
+| **Tool** | `edit_document` | Replaces a string in a document with new text |
+| **Resource** | `docs://documents` | Static list of all documents |
+| **Resource Template** | `fetch_doc` | Fetches a specific document by ID |
+| **Prompt** | `format` | Rewrites a document in Markdown format |
