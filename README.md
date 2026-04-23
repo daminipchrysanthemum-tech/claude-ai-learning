@@ -10,7 +10,7 @@ Running /init with a custom instruction to include notes on MCP tool definitions
 <img width="1407" height="791" alt="Claude Code In Action (Part 1)" src="https://github.com/user-attachments/assets/ff9fe753-b572-460c-b88e-9d81cd663667" />
 
 
---
+---
 
 
 ## Running
