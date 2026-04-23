@@ -138,7 +138,7 @@ Learn more: [(https://www.anthropic.com)](https://www.anthropic.com)
 
 ---
 
-*Built as part of structured AI learning — demonstrating hands-on experience with Claude, the Anthropic API, and the Model Context Protocol.*
+*Built as part of structured AI learning — demonstrating hands-on experience with Claude Code as an agentic coding assistant, test-driven development, MCP server enhancement, and parallel development workflows using Git worktrees.*
 
 
 
