@@ -79,7 +79,8 @@ Set up Git worktrees so Claude Code can work on multiple features simultaneously
 |------|------|-------------|
 | **Initialization** | `/init` | Auto-generated a 102-line CLAUDE.md capturing FastMCP server pattern, Pydantic Field annotation standards, tool registration flow, and module organization |
 | **File Audit** | `Read document.py + math.py` | Analyzed both source files simultaneously and flagged a standards violation in document.py before any new code was written |
-| **Tool** | `edit_document` | Replaces a string in a document with new text |
-| **Resource** | `docs://documents` | Static list of all documents |
-| **Resource Template** | `fetch_doc` | Fetches a specific document by ID |
-| **Prompt** | `format` | Rewrites a document in Markdown format |
+| **Test Planning** | `document_path_to_markdown tests` | Planned 20 tests across Core Functionality, File Handling, File Type, Content Variation, and Integration categories before writing any code |
+| **Test Implementation** | `Tests 1–5` | Implemented 5 tests reusing existing fixtures (mcp_docs.docx, mcp_docs.pdf) and following existing project patterns |
+| **Full Implementation** | `document_path_to_markdown tool` | Built the function with Pydantic Field descriptions, complete docstrings, file validation, error handling, and MCP server registration — all 8 tests passing |
+| **MCP Enhancement** | `DOCX to Markdown conversion` | Used the new tool to convert a real DOCX file to markdown, extracting live MCP documentation, including the full primitives table |
+| **Parallelization** | `Git worktree setup` | Created .trees/feature_a on a new branch, symlinked shared .venv, and launched a second VS Code window for simultaneous development
