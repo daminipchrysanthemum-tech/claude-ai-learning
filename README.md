@@ -7,6 +7,12 @@ Part 1 — Initializing the Project Context
 Running /init with a custom instruction to include notes on MCP tool definitions from the README. Claude Code read the repository and auto-generated a CLAUDE.md file in 102 lines — capturing the FastMCP server pattern, Pydantic Field annotation standards, tool registration flow, and module organization without any manual input.
 
 
+<img width="1407" height="791" alt="Claude Code In Action (Part 1)" src="https://github.com/user-attachments/assets/ff9fe753-b572-460c-b88e-9d81cd663667" />
+
+
+--
+
+
 ## Running
 
 ```bash
