@@ -1,4 +1,4 @@
-🤖 Claude Code in Action
+## 🤖 Claude Code in Action
 
 Used Claude Code directly inside VS Code as an agentic coding assistant — not just for autocomplete, but for reading the codebase, planning tests, writing implementations, and running verifications end to end.
 
