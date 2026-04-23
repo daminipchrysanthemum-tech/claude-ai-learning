@@ -1,4 +1,4 @@
-# 🔌 Model Context Protocol (MCP) — Anthropic Learning Academy
+## 🔌 Model Context Protocol (MCP) — Anthropic Learning Academy
 
 
 ---
