@@ -6,6 +6,7 @@ Used Claude Code directly inside VS Code as an agentic coding assistant — not 
 Part 1 — Initializing the Project Context
 Running /init with a custom instruction to include notes on MCP tool definitions from the README. Claude Code read the repository and auto-generated a CLAUDE.md file in 102 lines — capturing the FastMCP server pattern, Pydantic Field annotation standards, tool registration flow, and module organization without any manual input.
 
+
 ## Running
 
 ```bash
