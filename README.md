@@ -78,7 +78,7 @@ Set up Git worktrees so Claude Code can work on multiple features simultaneously
 | Type | Name | Description |
 |------|------|-------------|
 | **Initialization** | `/init` | Auto-generated a 102-line CLAUDE.md capturing FastMCP server pattern, Pydantic Field annotation standards, tool registration flow, and module organization |
-| **Tool** | `read_doc_contents` | Reads a document and returns it as a string |
+| **File Audit** | `Read document.py + math.py` | Analyzed both source files simultaneously and flagged a standards violation in document.py before any new code was written |
 | **Tool** | `edit_document` | Replaces a string in a document with new text |
 | **Resource** | `docs://documents` | Static list of all documents |
 | **Resource Template** | `fetch_doc` | Fetches a specific document by ID |
