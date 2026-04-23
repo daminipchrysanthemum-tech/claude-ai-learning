@@ -51,12 +51,6 @@ Implementing the document tools (`list_documents`, `read_doc_contents`, `edit_do
 
 ---
 
-## 🔮 Future Extensions  
-
-Computer Use integration — extend the MCP client to use Claude's computer use capability, allowing it to interact with desktop applications and browsers autonomously
-
----
-
 ## 📁 Defining & Accessing Resources
 
 ### Defining Resources
@@ -253,6 +247,12 @@ Learn more: [(https://www.anthropic.com)](https://www.anthropic.com)
 - A well-designed MCP server makes Claude dramatically more capable in specialized workflows
 - The MCP Inspector is invaluable for iterative development and debugging
 - Claude can reason through multi-step problems and follow-up questions with nuance
+
+---
+
+## 🔮 Future Extensions  
+
+Computer Use integration — extend the MCP client to use Claude's computer use capability, allowing it to interact with desktop applications and browsers autonomously
 
 ---
 
