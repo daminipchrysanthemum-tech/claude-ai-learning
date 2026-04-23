@@ -73,6 +73,7 @@ Set up Git worktrees so Claude Code can work on multiple features simultaneously
 
 ---
 
+
 ## 🛠️ Claude Code Workflow Summary
 
 | Type | Name | Description |
@@ -84,3 +85,24 @@ Set up Git worktrees so Claude Code can work on multiple features simultaneously
 | **Full Implementation** | `document_path_to_markdown tool` | Built the function with Pydantic Field descriptions, complete docstrings, file validation, error handling, and MCP server registration — all 8 tests passing |
 | **MCP Enhancement** | `DOCX to Markdown conversion` | Used the new tool to convert a real DOCX file to markdown, extracting live MCP documentation, including the full primitives table |
 | **Parallelization** | `Git worktree setup` | Created .trees/feature_a on a new branch, symlinked shared .venv, and launched a second VS Code window for simultaneous development
+
+
+---
+
+
+## ⚙️ Tech Stack
+
+
+| Layer | Technology |
+|------------|---------|
+| Agentic Coding Tool | Claude Code |
+| Editor | VS Code |
+| Language | Python 3.14 |
+| Package Runner | uv |
+| MCP Framework | FastMCP |
+| Data Validation | Pydantic |
+| Document Conversion | MarkItDown |
+| Version Control | Git + Git Worktrees |
+| Testing | pytest |
+
+
