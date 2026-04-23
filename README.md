@@ -49,6 +49,11 @@ Implementing the document tools (`list_documents`, `read_doc_contents`, `edit_do
 
 <img width="1890" height="897" alt="MCP Server (Part 2)" src="https://github.com/user-attachments/assets/d3ebf509-c826-46d3-a48f-54cadb48fdd2" />
 
+---
+
+## 🔮 Future Extensions  
+
+Computer Use integration — extend the MCP client to use Claude's computer use capability, allowing it to interact with desktop applications and browsers autonomously
 
 ---
 
