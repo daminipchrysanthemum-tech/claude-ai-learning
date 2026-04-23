@@ -13,46 +13,65 @@ Running /init with a custom instruction to include notes on MCP tool definitions
 ---
 
 
-## Running
+Part 2 — Reading and Auditing Source Files
+Asked Claude Code to read tools/document.py and tools/math.py simultaneously. It analyzed both files and flagged that document.py was missing Pydantic Field descriptions and the complete docstring format specified in CLAUDE.md — catching a standards violation before any new code was written.
 
-```bash
-# Start the MCP server
-uv run main.py
-```
 
-## Testing
+<img width="1391" height="624" alt="Claude Code In Action (Part 2)" src="https://github.com/user-attachments/assets/405bd378-747f-461e-8909-ead78092408d" />
 
-```bash
-# Run all tests
-uv run pytest
-```
 
-## Development
+---
 
-### Tool Definitions
 
-Tools are defined as Python functions and registered with the MCP server:
+Part 3 — Test Planning Before Writing Code
+Before writing a single line, I asked Claude Code to think through tests for a new document_path_to_markdown tool. It returned 20 structured tests across four categories — Core Functionality, File Handling, File Type, Content Variation, and Integration — and asked for approval before proceeding.
 
-```python
-mcp.tool()(my_function)
-```
 
-Tool descriptions should:
+<img width="1388" height="918" alt="Claude Code In Action (Part 3)" src="https://github.com/user-attachments/assets/54fb8a28-0f4e-4166-9667-677a30c7535d" />
 
-- Begin with a one-line summary
-- Provide detailed explanation of functionality
-- Explain when to use (and not use) the tool
-- Include usage examples with expected input/output
 
-Use `Field` from pydantic for parameter descriptions:
+---
 
-```python
-from pydantic import Field
 
-def my_tool(
-    param1: str = Field(description="Detailed description of this parameter"),
-    param2: int = Field(description="Explain what this parameter does")
-) -> ReturnType:
-    """Comprehensive docstring here"""
-    # Implementation
-```
+Part 4 — Implementing the Tests
+Claude Code implemented tests 1–5, reusing existing fixtures (mcp_docs.docx and mcp_docs.pdf) and following the existing test file patterns exactly. Tests were ready to run as soon as the function was implemented.
+
+
+<img width="1323" height="276" alt="Claude Code In Action (Part 4)" src="https://github.com/user-attachments/assets/29f05984-8c0c-4e7d-a03b-b998c17ac68e" />
+
+
+---
+
+
+Part 5 — Full Implementation, All Tests Passing ✅
+Claude Code implemented the document_path_to_markdown function in tools/document.py with proper Pydantic Field descriptions, complete docstrings, file validation, error handling (FileNotFoundError, IsADirectoryError, and ValueError), and registered it with the MCP server in main.py. All 8 tests pass (3 existing + 5 new).
+
+
+<img width="1322" height="520" alt="Claude Code In Action (Part 5)" src="https://github.com/user-attachments/assets/fcdc8b2a-53f2-4547-ba4f-bad6f33b34c4" />
+
+
+---
+
+
+🔌 Enhancements with MCP Servers
+Used the newly implemented document_path_to_markdown tool through Claude Code to convert a real DOCX file (tests/fixtures/mcp_docs.docx) to markdown. The conversion extracted live MCP documentation content, including the full MCP primitives table — Prompts, Resources, and Tools — confirming the tool works correctly end-to-end.
+
+
+<img width="1049" height="490" alt="Enhancements with MCP Servers" src="https://github.com/user-attachments/assets/1595c65e-5285-4a97-a501-ffad0eeb59e8" />
+
+
+---
+
+
+⚡ Parallelizing Claude Code with Git Worktrees
+Set up Git worktrees so Claude Code can work on multiple features simultaneously on separate branches without conflicts. Claude Code verified the worktree didn't exist, created .trees/feature_a on a new feature_a branch, symlinked the shared .venv, and launched a second VS Code window — all in one command sequence.
+
+
+
+<img width="1260" height="587" alt="Parallelizing Claude Code" src="https://github.com/user-attachments/assets/0b151707-b1cd-498c-8a06-26e107541efe" />
+
+
+---
+
+🛠️ Claude Code Workflow Summary
+StepActionOutcome/initInitialized project context102-line CLAUDE.md auto-generatedFile auditRead document.py + math.pyStandards violation caught before codingTest planningDescribed new tool in plain English20 tests planned across 4 categoriesTest implementationApproved plan5 tests written, reusing existing fixturesFull implementationOne task promptFunction built, registered, all 8 tests passingMCP enhancementRan tool via Claude CodeReal DOCX converted to markdown successfullyParallelizationGit worktree setupTwo branches ready for simultaneous development
